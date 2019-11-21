@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>餐酒-當季菜單</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/default.date.css">
+	<link rel="stylesheet" href="css/default.time.css">
+	<link rel="stylesheet" href="css/rtl.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/picker.time.js"></script>
+	<script src="js/zh_TW.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+	<div class="mobile-menu">
+		<div class="mobile-header">
+			<div class="container">
+				<a href="index.html" class="mobile-logo">
+					<img src="img/logo.svg" alt="餐酒">
+				</a>
+				<a href="" class="mobile-cancel">
+					<div></div>
+					<div></div>
+				</a>
+			</div>
+		</div>
+		<div class="mobile-nav">
+			<a href="index.html"><p>首頁</p></a>
+			<a href="aboutus.html"><p>關於我們</p></a>
+			<a href="newmenu.html"><p>當季菜色</p></a>
+			<a href="reservation.html"><p>線上訂位</p></a>
+		</div>
+		<div class="mobile-social">
+			<a href="https://www.facebook.com/%E9%A4%90%E9%85%92-104044647724877/?modal=admin_todo_tour"><i class="icon-facebook-squared"></i></a>
+			<a href="https://www.instagram.com/eatwine2019/"><i class="icon-instagram"></i></a>
+		</div>
+	</div>
+
+	<div id="header">
+		<div class="container flexbox-header">
+			<div class="nav-left">
+				<a href="index.html" class="home">
+					<div class="icon"><i class="icon-home"></i></div>
+					<div class="name">首頁</div>
+				</a>
+				<a href="aboutus.html" class="aboutus">
+					<div class="icon"><i class="icon-user"></i></div>
+					<div class="name">關於我們</div>
+				</a>
+			</div>
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt="餐酒">
+			</a>
+			<div class="nav-right">
+				<a href="newmenu.html">
+					<div class="icon"><i class="icon-food"></i></div>
+					<div class="name">當季菜色</div>
+				</a>
+				<a href="reservation.html">
+					<div class="icon"><i class="icon-comment"></i></div>
+					<div class="name">線上訂位</div>
+				</a>
+			</div>
+			<a href="#menu" class="hamburger-menu">
+				<div class="hamburger-icon">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div id="content">
+
+		<div class="pagename">
+			<div class="container">
+				<h1>當季菜色</h1>
+			</div>
+		</div>
+
+		<div class="item-bar">
+			<div class="container">
+				<div class="line"></div>
+				<a href="#" class="a-main-meal">主餐</a>
+				<div class="line"></div>
+				<a href="#" class="a-salad">沙拉</a>
+				<div class="line"></div>
+				<a href="#" class="a-dessert">甜點</a>
+				<div class="line"></div>
+				<a href="#" class="a-soup">湯品</a>
+				<div class="line"></div>
+				<a href="#" class="a-drink">飲品</a>
+				<div class="line"></div>
+				<a href="#" class="a-snack">小點</a>
+				<div class="line"></div>
+			</div>
+		</div>
+		
+		<div class="all-meal">
+			<div class="container">
+				<div class="main-meal active">
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/1.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">嫩煎原塊牛小排</div>
+								<div class="meal-price">$380</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/2.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">嫩煎原塊牛小排</div>
+								<div class="meal-price">$380</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/3.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">炭烤BBQ套餐</div>
+								<div class="meal-price">$420</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/4.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">美式厚切牛肉堡</div>
+								<div class="meal-price">$280</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/5.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">活力培根潛艇堡</div>
+								<div class="meal-price">$220</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/6.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">法式起司牛夾心堡</div>
+								<div class="meal-price">$220</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/7.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">椒麻乾拌麵</div>
+								<div class="meal-price">$180</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/8.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">日式辣味增面</div>
+								<div class="meal-price">$180</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/9.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">鮮蝦茄汁義大利麵</div>
+								<div class="meal-price">$280</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/main-meal/10.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">主餐</div>
+							<div class="item-name">
+								<div class="meal-name">泰式咖哩焗蝦飯</div>
+								<div class="meal-price">$250</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="salad">
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/salad/1.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">沙拉</div>
+							<div class="item-name">
+								<div class="meal-name">起司鮮蝦凱薩沙拉</div>
+								<div class="meal-price">$150</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/salad/2.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">沙拉</div>
+							<div class="item-name">
+								<div class="meal-name">黑胡椒雞肉沙拉</div>
+								<div class="meal-price">$150</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dessert">
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/dessert/1.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">甜點</div>
+							<div class="item-name">
+								<div class="meal-name">蜂蜜草莓鬆餅</div>
+								<div class="meal-price">$150</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/dessert/2.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">甜點</div>
+							<div class="item-name">
+								<div class="meal-name">巧克力藍莓鬆餅</div>
+								<div class="meal-price">$150</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/dessert/3.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">甜點</div>
+							<div class="item-name">
+								<div class="meal-name">莓果風味蛋糕</div>
+								<div class="meal-price">$100</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/dessert/4.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">甜點</div>
+							<div class="item-name">
+								<div class="meal-name">焦糖巧克力布朗尼</div>
+								<div class="meal-price">$100</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/dessert/5.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">甜點</div>
+							<div class="item-name">
+								<div class="meal-name">柑橘奶酪</div>
+								<div class="meal-price">$80</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/dessert/6.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">甜點</div>
+							<div class="item-name">
+								<div class="meal-name">草莓奶酪</div>
+								<div class="meal-price">$80</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/dessert/7.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">甜點</div>
+							<div class="item-name">
+								<div class="meal-name">巧克力冰炫風</div>
+								<div class="meal-price">$100</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/dessert/8.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">甜點</div>
+							<div class="item-name">
+								<div class="meal-name">多彩馬卡龍(4入)</div>
+								<div class="meal-price">$80</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="soup">
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/soup/1.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">湯品</div>
+							<div class="item-name">
+								<div class="meal-name">香濃玉米濃湯</div>
+								<div class="meal-price">$80</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/soup/2.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">湯品</div>
+							<div class="item-name">
+								<div class="meal-name">堅果南瓜濃湯</div>
+								<div class="meal-price">$80</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="drink">
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/1.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">手沖黑咖啡</div>
+								<div class="meal-price">$300</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/2.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">拉花拿鐵咖啡</div>
+								<div class="meal-price">$150</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/3.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">焦糖冰咖啡</div>
+								<div class="meal-price">$150</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/4.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">桑葚西米露冰沙</div>
+								<div class="meal-price">$180</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/5.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">玫瑰西米露冰沙</div>
+								<div class="meal-price">$180</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/6.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">草莓西米露</div>
+								<div class="meal-price">$150</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/7.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">風味水果茶</div>
+								<div class="meal-price">$160</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/8.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">檸香冰紅茶</div>
+								<div class="meal-price">$120</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/9.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">香濃熱可可</div>
+								<div class="meal-price">$120</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/10.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">特調蔬果汁</div>
+								<div class="meal-price">$220</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/11.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">特選葡萄酒</div>
+								<div class="meal-price">$380</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/drink/12.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">飲品</div>
+							<div class="item-name">
+								<div class="meal-name">私釀檸檬酒</div>
+								<div class="meal-price">$380</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="snack">
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/snack/1.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">小點</div>
+							<div class="item-name">
+								<div class="meal-name">青醬法式厚片</div>
+								<div class="meal-price">$80</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/snack/2.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">小點</div>
+							<div class="item-name">
+								<div class="meal-name">香酥炸魚塊</div>
+								<div class="meal-price">$150</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/snack/3.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">小點</div>
+							<div class="item-name">
+								<div class="meal-name">現切炸薯條</div>
+								<div class="meal-price">$60</div>
+							</div>
+						</div>
+					</div>
+					<div class="fooditem col-4">
+						<div class="item-img">
+							<img src="img/newmenu/snack/4.jpg" alt="餐酒">
+						</div>
+						<div class="item-intro">
+							<div class="item-kind">小點</div>
+							<div class="item-name">
+								<div class="meal-name">巧克力餅乾</div>
+								<div class="meal-price">$40</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="footer">
+		<div class="information">
+			<div class="container">
+				<div class="footer-nav">
+					<a href="index.html">首頁</a>
+					<a href="aboutus.html">關於我們</a>
+					<a href="newmenu.html">當季菜色</a>
+					<a href="reservation.html">線上訂位</a>
+				</div>
+				<div class="social-media">
+					<a href="https://www.facebook.com/%E9%A4%90%E9%85%92-104044647724877/?modal=admin_todo_tour"><i class="icon-facebook-squared"></i></a>
+					<a href="https://www.instagram.com/eatwine2019/"><i class="icon-instagram"></i></a>
+				</div>
+				<div class="copyright">©Copright 2019 Shao-Chuan Lu</div>
+			</div>
+		</div>
+		<div class="statement">
+			<div class="container">
+				<div class="statement-content">資料、圖片來源皆來自網路，僅用來做為學習用途</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>餐酒-一個懂你的地方</title>
+	<title>餐酒-線上訂位</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fontello.css">
@@ -10,14 +10,12 @@
 	<link rel="stylesheet" href="css/default.date.css">
 	<link rel="stylesheet" href="css/default.time.css">
 	<link rel="stylesheet" href="css/rtl.css">
-	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/picker.js"></script>
 	<script src="js/picker.date.js"></script>
 	<script src="js/picker.time.js"></script>
 	<script src="js/zh_TW.js"></script>
-	<script src="js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
@@ -81,61 +79,31 @@
 		</div>
 	</div>
 
-	
-
 	<div id="content">
-		
-		<div class="slider">
-			<!-- Slider main container -->
-			<div class="swiper-container">
-			    <!-- Additional required wrapper -->
-			    <div class="swiper-wrapper">
-			        <!-- Slides -->
-			        <div class="swiper-slide"><img src="img/index/slider1.jpg" alt="餐酒"></div>
-			        <div class="swiper-slide"><img src="img/index/slider2.jpg" alt="餐酒"></div>
-			        <div class="swiper-slide"><img src="img/index/slider3.jpg" alt="餐酒"></div>
-			    </div>
-			    <!-- If we need pagination -->
-			    <div class="swiper-pagination"></div>
-			</div>
-		</div>
 
-		<div class="intro">
-			<div class="container col-12">
-				<h1>一個懂你的地方</h1>
-				<p>我們提供放鬆的環境、美味的餐點，以及各式的飲品，讓您不管是約會、獨處、談公事甚至是呼朋引伴玩桌游都沒問題。快來感受一下餐酒的魅力吧！</p>
-			</div>
-		</div>
-
-		<div class="newitem">
+		<div class="pagename">
 			<div class="container">
-				<div class="newitem-img col-6">
-					<img src="img/index/新登場.jpg" alt="餐酒新登場">
-				</div>
-				<div class="newitem-content col-6">
-					<h1>本月新品！</h1>
-					<h1>泰式咖哩焗蝦飯</h1>
-					<p>含有豐富蛋白質的Q彈台灣白刺蝦，搭配泰式紅咖哩烹煮，再加上吸取蝦香鮮甜精華的Q彈米飯，絕對讓你一口接一口，上桌必秒殺！</p>
-					<a href="newmenu.html" class="gotomenu">瞭解當季菜單→</a>
-				</div>
+				<h1>線上訂位</h1>
 			</div>
 		</div>
-
-		<div class="anniversary">
+		
+		<div class="inputform">
 			<div class="container col-12">
-				<img src="img/index/周年慶.jpg" alt="餐酒周年慶">
-			</div>
-		</div>
-
-		<div class="write-email">
-			<div class="container col-12">
-				<div class="center-block">
-					<h1>填寫電子郵件，第一手優惠報你知！</h1>
-					<input type="text" placeholder="填寫電子郵件信箱">
-					<a href="#">
-						<p>送出</p>
-					</a>
-				</div>
+				<form action="register.php" method="post">
+					<label for="name">姓名</label>
+					<input type="text" name="name" id="name" placeholder="填寫訂位人姓名">
+					<label for="tel">電話</label>
+					<input type="text" name="tel" id="tel" placeholder="填寫訂位人電話">
+					<label for="date">用餐日期</label>
+					<input type="text" name="date" id="date" class="datepicker" placeholder="選擇用餐日期 ▽">
+					<label for="time">用餐時間</label>
+					<input type="text" name="time" id="time" class="timepicker" placeholder="選擇用餐時間 ▽">
+					<label for="people">用餐人數</label>
+					<input type="text" name="people" id="people" placeholder="填寫用餐人數">
+					<label for="textarea">留言</label>
+					<textarea name="textarea" id="textarea" cols="100" rows="10"></textarea>
+					<button type="submit">送出</button>
+				</form>
 			</div>
 		</div>
 
@@ -163,20 +131,6 @@
 			</div>
 		</div>
 	</div>
-
-	 <script>
-		var swiper = new Swiper('.swiper-container', {
-			loop: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-		    pagination: {
-		    	el: '.swiper-pagination',
-		    	clickable: true,
-		    },
-	    });
-	  </script>
 
 </body>
 </html>
