@@ -188,6 +188,7 @@ p {
 		margin: 0;
 		h1 {
 			padding: 1.25rem 0;
+			color: @color_5;
 		}
 	}
 	.slider {
@@ -358,7 +359,7 @@ p {
 		}
 	}
 	.all-meal {
-		margin-top: 0;
+		margin-top: 1.25rem;
 		.fooditem {
 			height: 83.3333333vw;
 			margin: 1.25rem 0;
@@ -397,8 +398,11 @@ p {
 			display: flex;
 		}
 	}
+	.online {
+		padding-top: 2.5rem;
+	}
 	.inputform {
-		margin-top: 2.5rem;
+		margin-top: 0;
 		input {
 			width: 100%;
 			height: 2.5rem;
@@ -478,7 +482,6 @@ p {
 
 
 @media (min-width: 768px) and (max-width: 1279px) {
-
 	.col-4 {
 		width: 334px;
 	}
@@ -496,7 +499,7 @@ p {
 	#header {
 		margin: 1.75rem 0;
 		.logo {
-			width: 103px;
+			width: 83px;
 		}
 		.nav-left,.nav-right {
 			display: flex;
@@ -509,10 +512,10 @@ p {
 			justify-content: space-around;
 			align-items: center;
 			width: 7rem;
-			height: 6.25rem;
+			height: 5rem;
 		}
 		.icon {
-			font-size: 2.75rem;
+			font-size: 2.5rem;
 			font-weight: 800;
 			color: @color_1;
 		}
@@ -523,7 +526,7 @@ p {
 		}
 		.nav-line {
 			width: 1px;
-			height: 6.25rem;
+			height: 5rem;
 			background-color: @color_3;
 		}
 		.hamburger-menu {
@@ -548,6 +551,9 @@ p {
 				height: 22.5rem;
 				padding: 0 1.5rem;
 				justify-content: center;
+				.gotomenu {
+					margin: 1rem 0 0 0;
+				}
 			}
 		}
 		.anniversary {
@@ -622,4 +628,223 @@ p {
 		}
 	}
 
+}
+
+@media (min-width: 1280px) {
+	.col-4 {
+		width: 368px;
+	}
+
+	.col-6 {
+		width: 50%;
+	}
+	html {
+		font-size: 16px;
+	}
+	p {
+		line-height: 1.5;
+	}
+	.container {
+		width: 1152px;
+	}
+	
+	#header {
+		margin: 1.75rem 0;
+		.logo {
+			width: 83px;
+		}
+		.nav-left,.nav-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.home,.aboutus,.newmenu,.reservation {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			width: 7rem;
+			height: 5rem;
+			&:hover {
+				.icon,.name {
+					color: @color_5;
+					transition: all .2s;
+				}
+			}
+		}
+		.icon {
+			font-size: 2.5rem;
+			font-weight: 800;
+			color: @color_1;
+		}
+		.name {
+			font-size: 1.25rem;
+			font-weight: 800;
+			color: @color_1;
+		}
+		.nav-line {
+			width: 1px;
+			height: 5rem;
+			background-color: @color_3;
+		}
+		.hamburger-menu {
+			display: none;
+		}
+	}
+
+	#content {
+		>div {
+			margin-top: 10rem;
+		}
+		.slider {
+			width: 1152px;
+			margin: 0 auto;
+		}
+		.intro {
+			margin-top: 10rem;
+			.container {
+				width: 35.25rem;
+			}
+		}
+		.newitem {
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.newitem-content {
+				height: 40.25rem;
+				padding: 0 3rem;
+				justify-content: center;
+				p {
+					padding-top: 2rem;
+				}
+				.gotomenu {
+					margin: 2rem 0 0 0;
+					&:hover {
+						background-color: @color_5;
+						transition: all .2s;
+					}
+				}
+			}
+		}
+		.anniversary {
+			.container {
+				width: 1152px;
+			}
+		}
+		.write-email {
+			width: 1152px;
+			height: 27.5rem;
+			margin: 7.5rem auto;
+			.center-block {
+				width: 59.75rem;
+				height: 18.75rem;
+				h1 {
+					padding: 0;
+					font-size: 2.25rem;
+				}
+				input {
+					width: 50rem;
+					height: 50px;
+					margin: 2rem 0 1.25rem 0;
+					padding-left: 0.5rem;
+				}
+				button {
+					width: 50rem;
+					height: 50px;
+					font-size: 1.5rem;
+				}
+			}
+		}
+		.delicious {
+			width: 1152px;
+			margin: 0 auto;
+			.container {
+				width: 35.25rem;
+				margin-top: 3.25rem;
+			}
+			h1 {
+				text-align: center;
+			}
+		}
+		.coffee {
+			.container {
+				flex-direction: row;
+				align-items: center;
+			}
+			.coffee-content {
+				padding: 0 3.75rem 0 2.25rem;
+			}
+			.coffee-image {
+				order: 0;
+			}
+		}
+		.comfortable {
+			.container {
+				flex-direction: row;
+				align-items: center;
+			}
+			.comfortable-content {
+				padding: 0 2.25rem 0 3.75rem;
+			}
+		}
+		.location {
+			width: 1152px;
+			height: 68.5rem;
+			margin: 0 auto;
+			margin-top: 10rem;
+			h1 {
+				padding-bottom: 2.25rem;
+				font-size: 3rem;
+			}
+			.googlemap {
+				padding-bottom: 2.25rem;
+			}
+			.googlemap iframe{
+				width: 47.5rem;
+				height: 37.5rem;
+			}
+			.location-content {
+				p {
+					font-size: 1.5rem;
+				}
+			}
+		}
+		.item-bar {
+			a {
+				font-size: 1.5rem;
+				&:hover {
+					color: @color_5;
+					transition: all .2s;
+				}
+			}
+			.line {
+				height: 30px;
+			}
+		}
+		.all-meal {
+			.fooditem {
+				height: 368px;
+			}
+			.main-meal,.salad,.dessert,.soup,.drink,.snack {
+				flex-direction: row;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			.item-intro {
+				height: 92px;
+			}
+		}
+		.inputform {
+			.container {
+				width: 47.5rem;
+			}
+		}
+		.online {
+			.container {
+				width: 47.5rem;
+			}
+		}
+	}
 }
