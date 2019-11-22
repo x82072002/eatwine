@@ -13,39 +13,40 @@ $(document).ready(function(e){
 
 	//newmenu
 	$('.a-main-meal').click(function(e){
-		console.log('ok');
 		$('.main-meal,.salad,.dessert,.soup,.drink,.snack').removeClass('active');
 		$('.main-meal').addClass('active');
+		$('.a-main-meal,.a-salad,.a-dessert,.a-soup,.a-drink,.a-snack').removeClass('active');
+		$('.a-main-meal').addClass('active');
 	});
 	$('.a-salad').click(function(e){
-		console.log('ok');
 		$('.main-meal,.salad,.dessert,.soup,.drink,.snack').removeClass('active');
 		$('.salad').addClass('active');
-	});
-	$('.a-main-meal').click(function(e){
-		console.log('ok');
-		$('.main-meal,.salad,.dessert,.soup,.drink,.snack').removeClass('active');
-		$('.main-meal').addClass('active');
+		$('.a-main-meal,.a-salad,.a-dessert,.a-soup,.a-drink,.a-snack').removeClass('active');
+		$('.a-salad').addClass('active');
 	});
 	$('.a-dessert').click(function(e){
-		console.log('ok');
 		$('.main-meal,.salad,.dessert,.soup,.drink,.snack').removeClass('active');
 		$('.dessert').addClass('active');
+		$('.a-main-meal,.a-salad,.a-dessert,.a-soup,.a-drink,.a-snack').removeClass('active');
+		$('.a-dessert').addClass('active');
 	});
 	$('.a-soup').click(function(e){
-		console.log('ok');
 		$('.main-meal,.salad,.dessert,.soup,.drink,.snack').removeClass('active');
 		$('.soup').addClass('active');
+		$('.a-main-meal,.a-salad,.a-dessert,.a-soup,.a-drink,.a-snack').removeClass('active');
+		$('.a-soup').addClass('active');
 	});
 	$('.a-drink').click(function(e){
-		console.log('ok');
 		$('.main-meal,.salad,.dessert,.soup,.drink,.snack').removeClass('active');
 		$('.drink').addClass('active');
+		$('.a-main-meal,.a-salad,.a-dessert,.a-soup,.a-drink,.a-snack').removeClass('active');
+		$('.a-drink').addClass('active');
 	});
 	$('.a-snack').click(function(e){
-		console.log('ok');
 		$('.main-meal,.salad,.dessert,.soup,.drink,.snack').removeClass('active');
 		$('.snack').addClass('active');
+		$('.a-main-meal,.a-salad,.a-dessert,.a-soup,.a-drink,.a-snack').removeClass('active');
+		$('.a-snack').addClass('active');
 	});
 
 

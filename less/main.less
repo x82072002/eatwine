@@ -237,6 +237,11 @@ p {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 		.center-block {
 			flex-direction: column;
 			justify-content: center;
@@ -346,6 +351,9 @@ p {
 		a {
 			font-size: 1.25rem;
 			font-weight: 800;
+			color: @color_3;
+		}
+		.active {
 			color: @color_1;
 		}
 	}
@@ -466,4 +474,152 @@ p {
 		background-color: @color_2;
 		text-align: center;
 	}
+}
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+	.col-4 {
+		width: 334px;
+	}
+
+	.col-6 {
+		width: 50%;
+	}
+	html {
+		font-size: 16px;
+	}
+	.container {
+		width: 700px;
+	}
+	
+	#header {
+		margin: 1.75rem 0;
+		.logo {
+			width: 103px;
+		}
+		.nav-left,.nav-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.home,.aboutus,.newmenu,.reservation {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			width: 7rem;
+			height: 6.25rem;
+		}
+		.icon {
+			font-size: 2.75rem;
+			font-weight: 800;
+			color: @color_1;
+		}
+		.name {
+			font-size: 1.25rem;
+			font-weight: 800;
+			color: @color_1;
+		}
+		.nav-line {
+			width: 1px;
+			height: 6.25rem;
+			background-color: @color_3;
+		}
+		.hamburger-menu {
+			display: none;
+		}
+	}
+
+	#content {
+		.intro {
+			margin-top: 7.5rem;
+			.container {
+				width: 28rem;
+			}
+		}
+		.newitem {
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.newitem-content {
+				height: 22.5rem;
+				padding: 0 1.5rem;
+				justify-content: center;
+			}
+		}
+		.anniversary {
+			.container {
+				width: 700px;
+			}
+		}
+		.write-email {
+			width: 700px;
+			margin: 7.5rem auto;
+			.center-block {
+				width: 600px;
+				input {
+					width: 500px;
+					padding-left: 0.5rem;
+				}
+				button {
+					width: 500px;
+				}
+			}
+		}
+		.delicious {
+			width: 700px;
+			margin: 0 auto;
+			.container {
+				width: 28rem;
+				margin-top: 3.25rem;
+			}
+			h1 {
+				text-align: center;
+			}
+		}
+		.coffee {
+			.container {
+				flex-direction: row;
+				align-items: center;
+			}
+			.coffee-content {
+				padding: 0 2rem;
+			}
+			.coffee-image {
+				order: 0;
+			}
+		}
+		.comfortable {
+			.container {
+				flex-direction: row;
+				align-items: center;
+			}
+			.comfortable-content {
+				padding: 0 2rem;
+			}
+		}
+		.location {
+			.googlemap iframe{
+				width: 28rem;
+				height: 25rem;
+			}
+		}
+		.all-meal {
+			.fooditem {
+				height: 334px;
+			}
+			.main-meal,.salad,.dessert,.soup,.drink,.snack {
+				flex-direction: row;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			.item-intro {
+				height: 83.5px;
+			}
+		}
+	}
+
 }
