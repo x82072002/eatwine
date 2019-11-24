@@ -10,6 +10,18 @@ $(document).ready(function(e){
 		$('.mobile-menu').removeClass('active');
 	});
 
+	//fixedheader
+	$(document).scroll(function(e){
+		var scrollTop = $(document).scrollTop();
+		console.log(scrollTop);
+		if(scrollTop >= 16){
+			$('.fixedheader').addClass('active');
+		}
+		else {
+			$('.fixedheader').removeClass('active');
+		}
+	});
+
 
 	//newmenu
 	$('.a-main-meal').click(function(e){
