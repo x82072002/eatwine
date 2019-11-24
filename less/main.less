@@ -180,6 +180,10 @@ p {
 		margin-top: 10px;
 	}
 }
+
+.fixedheader {
+	display: none;
+}
       
 #content {
 	>div {
@@ -569,6 +573,56 @@ p {
 		}
 		.hamburger-menu {
 			display: none;
+		}
+	}
+	.fixedheader {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 2;
+		padding: 0.75rem 0;
+		background-color: #E5E5E5;
+		&.active {
+			display: inline-block;
+		}
+		.logo {
+			width: 83px;
+		}
+		.nav-left,.nav-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.home,.aboutus,.newmenu,.reservation {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			width: 7rem;
+			height: 5rem;
+			&:hover {
+				.icon,.name {
+					color: @color_5;
+					transition: all .2s;
+				}
+			}
+		}
+		.icon {
+			font-size: 2.5rem;
+			font-weight: 800;
+			color: @color_1;
+		}
+		.name {
+			font-size: 1.25rem;
+			font-weight: 800;
+			color: @color_1;
+		}
+		.nav-line {
+			width: 1px;
+			height: 5rem;
+			background-color: @color_3;
 		}
 	}
 
