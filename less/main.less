@@ -210,25 +210,35 @@ p {
 			display: none;
 		}
 		.newitem-content {
-			display: flex;
-			flex-direction: column;
-			padding: 0 1.25rem;
+			padding: 0 1rem 1rem 1rem;
 			background-color: @color_3;
 			h1 {
-				padding-top: 0.75rem;
-				padding-bottom: 0;
+				padding: 1rem 1rem 0 1rem;
+			}
+			.line2 {
+				padding-top: 0.5rem;
 			}
 			p {
-				padding-top: 0.75rem;
+				padding: 1rem 1rem 0 1rem;
+			}
+			.newmenu-button {
+				padding: 2rem 1rem 2rem 1rem;
 			}
 			.gotomenu {
-				width: 10rem;
-				margin: 1rem 0 1.75rem 0;
-				padding: 0.75rem 0.5rem;
-				background-color: @color_2;
+				display: inline-block;
+				padding: 0.5rem 1rem;
+				background-color: @color_5;
 				color: @color_4;
 				font-size: 1.25rem;
+				font-weight: 800;
 			}
+		}
+		.border {
+			display: flex;
+			flex-direction: column;
+			padding-top: 1rem;
+			border: 1px solid @color_2; 
+			border-top: none;
 		}
 	}
 	.anniversary {
@@ -300,15 +310,21 @@ p {
 			order: -1;
 		}
 		.coffee-content {
-			padding: 1.25rem;
+			padding: 0 1rem 1rem 1rem;
 			background-color: #4E321C;
 			color: @color_4;
+			h1 {
+				padding: 1rem 1rem 0 1rem;
+				font-size: 1.75rem;
+			}
 			p {
-				margin-top: 0.5rem;
+				padding: 1rem 1rem 0 1rem;
+			}
+			.reservation-button {
+				padding: 2rem 1rem 2rem 1rem;
 			}
 			a {
 				display: inline-block;
-				margin: 2.5rem 0 1rem 0;
 				padding: 0.5rem 1rem;
 				font-size: 1.25em;
 				font-weight: 800;
@@ -316,8 +332,12 @@ p {
 				background-color: @color_4;
 			}
 		}
-		h1 {
-			font-size: 1.75rem;
+		.border {
+			display: flex;
+			flex-direction: column;
+			padding-top: 1rem;
+			border: 1px solid @color_4; 
+			border-top: none;
 		}
 	}
 	.comfortable {
@@ -329,15 +349,21 @@ p {
 			order: -1;
 		}
 		.comfortable-content {
-			padding: 1.25rem;
+			padding: 0 1rem 1rem 1rem;
 			background-color: @color_2;
 			color: @color_4;
+			h1 {
+				padding: 1rem 1rem 0 1rem;
+				font-size: 1.75rem;
+			}
 			p {
-				margin-top: 0.5rem;
+				padding: 1rem 1rem 0 1rem;
+			}
+			.reservation-button {
+				padding: 2rem 1rem 2rem 1rem;
 			}
 			a {
 				display: inline-block;
-				margin: 2.5rem 0 1rem 0;
 				padding: 0.5rem 1rem;
 				font-size: 1.25em;
 				font-weight: 800;
@@ -345,8 +371,12 @@ p {
 				background-color: @color_4;
 			}
 		}
-		h1 {
-			font-size: 1.75rem;
+		.border {
+			display: flex;
+			flex-direction: column;
+			padding-top: 1rem;
+			border: 1px solid @color_4; 
+			border-top: none;
 		}
 	}
 	.location {
@@ -363,6 +393,7 @@ p {
 			padding-bottom: 1.75rem;
 			text-align: center;
 			color: @color_4;
+			font-size: 2.5rem;
 		}
 		.googlemap {
 			display: flex;
@@ -380,6 +411,7 @@ p {
 			color: @color_4;
 			p {
 				padding-bottom: 0.75rem;
+				font-size: 1.25rem;
 			}
 		}
 	}
@@ -531,7 +563,6 @@ p {
 	.col-4 {
 		width: 334px;
 	}
-
 	.col-6 {
 		width: 50%;
 	}
@@ -541,7 +572,6 @@ p {
 	.container {
 		width: 700px;
 	}
-	
 	#header {
 		margin: 1.5rem 0;
 		.logo {
@@ -632,7 +662,7 @@ p {
 
 	#content {
 		.intro {
-			margin-top: 7.5rem;
+			margin-top: 3.25rem;
 			.container {
 				width: 28rem;
 			}
@@ -644,12 +674,32 @@ p {
 				align-items: center;
 			}
 			.newitem-content {
-				height: 22.5rem;
-				padding: 0 1.5rem;
-				justify-content: center;
-				.gotomenu {
-					margin: 1rem 0 0 0;
+				padding: 1rem 1rem 1rem 0;
+				background-color: @color_3;
+				h1 {
+					padding: 1rem 1rem 0 1rem;
 				}
+				p {
+					padding: 1rem 1rem 0 1rem;
+				}
+				.newmenu-button {
+					padding: 2rem 1rem 2rem 1rem;
+				}
+				.gotomenu {
+					display: inline-block;
+					padding: 0.5rem 1rem;
+					background-color: @color_5;
+					color: @color_4;
+					font-size: 1.25rem;
+					font-weight: 800;
+				}
+			}
+			.border {
+				display: flex;
+				flex-direction: column;
+				padding-top: 1rem;
+				border: 1px solid @color_2; 
+				border-left: none;
 			}
 		}
 		.anniversary {
@@ -697,17 +747,42 @@ p {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				align-items: center;
 				position: absolute;
-				padding: 0 5rem 0 2rem;
+				padding: 1rem;
 				width: 388px;
-				height: 447px;
-				top: 100px;
+				height: 461px;
+				top: 80px;
 				h1 {
+					padding: 0;
 					font-size: 2rem;
 				}
+				p {
+					padding: 1.5rem 2.5rem 0 0;
+				}
+				.reservation-button {
+					padding: 3rem 0 0 0;
+				}
+				a {
+					display: inline-block;
+					padding: 0.5rem 1rem;
+					font-size: 1.25em;
+					font-weight: 800;
+					color: @color_1;
+					background-color: @color_4;
+				}
+			}
+			.border {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 356px;
+				height: 429px;
+				padding: 1rem;
+				border: 1px solid @color_4; 
 			}
 			.coffee-image {
-				width: 52%;
+				width: 364px;
 				position: relative;
 				left: 336px;
 				order: 0;
@@ -725,24 +800,57 @@ p {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				align-items: center;
 				position: absolute;
-				padding: 0 1.5rem 0 5.25rem;
+				padding: 1rem;
 				width: 388px;
-				height: 447px;
-				top: 100px;
+				height: 461px;
+				top: 80px;
 				left: 312px;
 				h1 {
+					padding: 0 0 0 2.75rem;
 					font-size: 2rem;
 				}
+				p {
+					padding: 1.5rem 0 0 2.75rem;
+				}
+				.reservation-button {
+					padding: 3rem 0 0 2.75rem;
+				}
+				a {
+					display: inline-block;
+					padding: 0.5rem 1rem;
+					font-size: 1.25em;
+					font-weight: 800;
+					color: @color_1;
+					background-color: @color_4;
+				}
+			}
+			.border {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 356px;
+				height: 429px;
+				padding: 1rem;
+				border: 1px solid @color_4; 
 			}
 			.comfortable-image {
-				width: 52%;
+				width: 364px;
 				position: relative;
 				z-index: 1;
 			}
 		}
 		.location {
 			margin-top: 220px;
+			.border {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 732px;
+				border: 1px solid @color_4;
+			}
 			.googlemap iframe{
 				width: 28rem;
 				height: 25rem;
@@ -936,19 +1044,42 @@ p {
 				}
 			}
 			.newitem-content {
-				height: 40.25rem;
-				padding: 0 3rem;
-				justify-content: center;
+				height: 620px;
+				padding: 2.25rem 2.25rem 2.25rem 0;
+				background-color: @color_3;
+				h1 {
+					padding: 0 3rem;
+					font-size: 2.25rem;
+				}
 				p {
-					padding-top: 2rem;
+					padding: 3rem 3rem 0 3rem;
+					font-size: 1.25rem;
+				}
+				.newmenu-button {
+					padding: 3rem 3rem 0 3rem;
 				}
 				.gotomenu {
-					margin: 2rem 0 0 0;
+					display: inline-block;
+					padding: 0.5rem 1rem;
+					background-color: @color_5;
+					color: @color_4;
+					font-size: 1.5rem;
+					font-weight: 800;
 					&:hover {
-						background-color: @color_5;
+						background-color: @color_1;
+						color: @color_4;
 						transition: all .2s;
 					}
 				}
+			}
+			.border {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding-top: 0;
+				height: 548px;
+				border: 1px solid @color_1; 
+				border-left: none;
 			}
 		}
 		.anniversary {
@@ -979,6 +1110,7 @@ p {
 					font-size: 1.5rem;
 					&:hover {
 						background-color: @color_1;
+						transition: all .2s;
 					}
 				}
 			}
@@ -1006,19 +1138,44 @@ p {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				align-items: center;
 				position: absolute;
-				padding: 0 8.5rem 0 2.75rem;
+				padding: 2.25rem;
 				width: 640px;
-				height: 736px;
+				height: 760px;
 				top: 100px;
 				h1 {
+					padding: 0;
 					font-size: 2rem;
 				}
-				a:hover {
-					background-color: @color_1;
-					color: @color_4;
-					transition: all .2s;
+				p {
+					padding: 1.5rem 2.5rem 0 0;
 				}
+				.reservation-button {
+					padding: 3rem 0 0 0;
+				}
+				a {
+					display: inline-block;
+					padding: 0.5rem 1rem;
+					font-size: 1.25em;
+					font-weight: 800;
+					color: @color_1;
+					background-color: @color_4;
+					&:hover {
+						background-color: @color_1;
+						color: @color_4;
+						transition: all .2s;
+					}
+				}
+			}
+			.border {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 568px;
+				height: 688px;
+				padding: 3rem;
+				border: 1px solid @color_4; 
 			}
 			.coffee-image {
 				width: 600px;
@@ -1039,20 +1196,45 @@ p {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				align-items: center;
 				position: absolute;
-				padding: 0 2.75rem 0 8.5rem;
+				padding: 2.25rem;
 				width: 640px;
-				height: 736px;
+				height: 760px;
 				top: 100px;
 				left: 512px;
 				h1 {
+					padding: 0 0 0 2.5rem;
 					font-size: 2rem;
 				}
-				a:hover {
-					background-color: @color_5;
-					color: @color_4;
-					transition: all .2s;
+				p {
+					padding: 1.5rem 0 0 2.5rem;
 				}
+				.reservation-button {
+					padding: 3rem 0 0 2.5rem;
+				}
+				a {
+					display: inline-block;
+					padding: 0.5rem 1rem;
+					font-size: 1.25em;
+					font-weight: 800;
+					color: @color_1;
+					background-color: @color_4;
+					&:hover {
+						background-color: @color_1;
+						color: @color_4;
+						transition: all .2s;
+					}
+				}
+			}
+			.border {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 568px;
+				height: 688px;
+				padding: 3rem;
+				border: 1px solid @color_4; 
 			}
 			.comfortable-image {
 				width: 600px;
@@ -1062,12 +1244,22 @@ p {
 		}
 		.location {
 			width: 1152px;
-			height: 68.5rem;
+			height: 1116px;
 			margin: 0 auto;
 			margin-top: 16.25rem;
+			.border {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 1080px;
+				height: 1044px;
+				margin: 0 auto;
+				border: 1px solid @color_4;
+			}
 			h1 {
 				padding-bottom: 2.25rem;
-				font-size: 2.25rem;
+				font-size: 2.5rem;
 			}
 			.googlemap {
 				padding-bottom: 2.25rem;
