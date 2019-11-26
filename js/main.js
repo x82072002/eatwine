@@ -14,7 +14,7 @@ $(document).ready(function(e){
 	$(document).scroll(function(e){
 		var scrollTop = $(document).scrollTop();
 		console.log(scrollTop);
-		if(scrollTop >= 16){
+		if(scrollTop >= 20){
 			$('.fixedheader').addClass('active');
 		}
 		else {
