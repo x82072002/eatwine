@@ -41,6 +41,24 @@
       "css": "instagram",
       "code": 61805,
       "src": "fontawesome"
+    },
+    {
+      "uid": "ab656e280958018a7859eba9a1eabbc7",
+      "css": "award",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5e2ab018e3044337bcef5f7e94098ea1",
+      "css": "thumbs-up-alt",
+      "code": 61796,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3a26448b711645ba1abfc86c1a6e2f30",
+      "css": "coffee",
+      "code": 61684,
+      "src": "fontawesome"
     }
   ]
 }
