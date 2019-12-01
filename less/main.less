@@ -468,7 +468,7 @@ p {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 50rem;
+		height: 160vw;
 		h1 {
 			padding-bottom: 1.75rem;
 			text-align: center;
@@ -481,8 +481,9 @@ p {
 			align-items: center;
 			padding-bottom: 1.75rem;
 			color: @color_4;
-			iframe {
+			#map {
 				width: 83.3333333vw;
+				height: 83.3333333vw;
 			}
 		}
 		.location-content {
@@ -678,7 +679,7 @@ p {
 	#header {
 		margin: 1rem 0;
 		.logo {
-			width: 83px;
+			width: 72px;
 		}
 		.nav-left,.nav-right {
 			display: flex;
@@ -691,21 +692,21 @@ p {
 			justify-content: space-around;
 			align-items: center;
 			width: 7rem;
-			height: 5rem;
+			height: 70px;
 		}
 		.icon {
-			font-size: 2.25rem;
+			font-size: 2rem;
 			font-weight: 800;
 			color: @color_1;
 		}
 		.name {
-			font-size: 1.25rem;
+			font-size: 1rem;
 			font-weight: 800;
 			color: @color_1;
 		}
 		.nav-line {
 			width: 1px;
-			height: 5rem;
+			height: 70px;
 			background-color: @color_3;
 		}
 		.hamburger-menu {
@@ -988,15 +989,17 @@ p {
 		}
 		.location {
 			margin-top: 220px;
+			height: 50rem;
 			.border {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				width: 700px;
 				height: 732px;
 				border: 1px solid @color_4;
 			}
-			.googlemap iframe{
+			.googlemap #map{
 				width: 28rem;
 				height: 25rem;
 			}
@@ -1049,7 +1052,7 @@ p {
 	#header {
 		margin: 1rem 0;
 		.logo {
-			width: 83px;
+			width: 72px;
 		}
 		.nav-left,.nav-right {
 			display: flex;
@@ -1062,7 +1065,7 @@ p {
 			justify-content: space-around;
 			align-items: center;
 			width: 7rem;
-			height: 5rem;
+			height: 70px;
 			&:hover {
 				.icon,.name {
 					color: @color_5;
@@ -1071,18 +1074,18 @@ p {
 			}
 		}
 		.icon {
-			font-size: 2.25rem;
+			font-size: 2rem;
 			font-weight: 800;
 			color: @color_1;
 		}
 		.name {
-			font-size: 1.25rem;
+			font-size: 1rem;
 			font-weight: 800;
 			color: @color_1;
 		}
 		.nav-line {
 			width: 1px;
-			height: 5rem;
+			height: 70px;
 			background-color: @color_3;
 		}
 		.hamburger-menu {
@@ -1449,7 +1452,7 @@ p {
 			.googlemap {
 				padding-bottom: 2.25rem;
 			}
-			.googlemap iframe{
+			.googlemap #map{
 				width: 47.5rem;
 				height: 37.5rem;
 			}
