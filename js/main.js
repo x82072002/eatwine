@@ -1,3 +1,6 @@
+var windowWidth = $(window).width();
+console.log(windowWidth);
+
 $(document).ready(function(e){
 
 	//open mobile-menu
@@ -21,6 +24,13 @@ $(document).ready(function(e){
 		}
 	});
 
+	//fb-plugin
+	if(windowWidth>=768 && windowWidth<=1023) {
+
+		var dataheight = $('.fb-page').prop('data-href');
+		console.log(dataheight);
+
+	}
 
 	//newmenu
 	$('.a-main-meal').click(function(e){
