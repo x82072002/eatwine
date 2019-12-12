@@ -100,7 +100,7 @@ p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 2;
+	z-index: 3;
 	background-color: @color_1;
 	&.active {
 		display: flex;
@@ -171,8 +171,14 @@ p {
 	}
 }
 
-#header {
-	margin: 1.25rem 0;
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1.25rem 0;
+	background-color: @color_4;
+	z-index: 2;
 	.logo {
 		width: 52px;
 	}
@@ -192,11 +198,18 @@ p {
 	}
 }
 
+.header.active {
+	padding: 0.75rem 0;
+	background-color: @color_6;
+	transition: all 0.3s;
+}
+
 .fixedheader {
 	display: none;
 }
    
 #content {
+	margin-top: 80px;
 	>div {
 		margin-top: 7.5rem;
 	}
@@ -697,8 +710,9 @@ p {
 	.container {
 		width: 700px;
 	}
-	#header {
-		margin: 1rem 0;
+	.header {
+		position: static;
+		padding: 1rem 0;
 		.logo {
 			width: 72px;
 		}
@@ -786,6 +800,7 @@ p {
 	}
 
 	#content {
+		margin-top: 0;
 		.intro {
 			margin-top: 3.25rem;
 			.container {
@@ -1082,8 +1097,9 @@ p {
 		width: 1152px;
 	}
 	
-	#header {
-		margin: 1rem 0;
+	.header {
+		position: static;
+		padding: 1rem 0;
 		.logo {
 			width: 72px;
 		}
@@ -1178,6 +1194,7 @@ p {
 	}
 
 	#content {
+		margin-top: 0;
 		>div {
 			margin-top: 10rem;
 		}

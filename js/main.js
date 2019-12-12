@@ -1,3 +1,5 @@
+var windowWidth = $(window).width();
+
 $(document).ready(function(e){
 
 	//open mobile-menu
@@ -20,6 +22,19 @@ $(document).ready(function(e){
 			$('.fixedheader').removeClass('active');
 		}
 	});
+
+	//mobile-header-color
+	if (windowWidth <= 767) {
+		$(document).scroll(function(e){
+			var scrollTop = $(document).scrollTop();
+			if (scrollTop > 0) {
+				$('.header').addClass('active');
+			}
+			else {
+				$('.header').removeClass('active');
+			}
+		});
+	}
 
 	//newmenu
 	$('.a-main-meal').click(function(e){
