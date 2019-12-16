@@ -218,7 +218,7 @@ p {
 		.square {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-evenly;
+			justify-content: center;
 			align-items: center;
 			width: 6rem;
 			height: 6rem;
@@ -228,6 +228,9 @@ p {
 			padding: 0;
 			color: @color_5;
 			line-height: 1;
+			&:nth-child(2) {
+				margin-top: 0.5rem;
+			}
 		}
 	}
 	.pagename.online {
@@ -1223,6 +1226,9 @@ p {
 						border: 4px solid #b06427;
 					}
 				}
+				.reason {
+					width: 256px;
+				}
 			}
 			.ambience {
 				width: 256px;
@@ -1233,6 +1239,9 @@ p {
 						border: 4px solid #007da1;
 					}
 				}
+				.reason {
+					width: 256px;
+				}
 			}
 			.coffee {
 				width: 256px;
@@ -1242,6 +1251,9 @@ p {
 						background-color: #822848;
 						border: 4px solid #822848;
 					}
+				}
+				.reason {
+					width: 256px;
 				}
 			}
 		}
